@@ -9,6 +9,7 @@ GET http://localhost:3000/board/11
 
 ###
 
+# 게시글 생성
 POST http://localhost:3000/board
 content-type: application/json
 
@@ -16,3 +17,15 @@ content-type: application/json
     "name": "FastCampus",
     "contents": "contents 11"
 }
+
+###
+
+# 게시글 수정
+PUT http://localhost:3000/board/11
+content-type: application/json
+
+{
+    "name": "FastCampus New"
+}
+
+###

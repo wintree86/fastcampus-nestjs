@@ -31,7 +31,7 @@ export class BoardController {
         @Param('id') id: number,
         @Body() data
     ) {
-        return 'update';
+        return this.boardService.update(Number(id), data);
     }
 
 
