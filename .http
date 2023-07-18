@@ -1,4 +1,10 @@
 
+# 게시글 전체 가져오기
 GET http://localhost:3000/board
+
+###
+
+# 게시글 하나 가져오기
+GET http://localhost:3000/board/1
 
 ###
