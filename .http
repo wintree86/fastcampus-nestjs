@@ -5,7 +5,7 @@ GET http://localhost:3000/board
 ###
 
 # 게시글 하나 가져오기
-GET http://localhost:3000/board/11
+GET http://localhost:3000/board/1
 
 ###
 
@@ -29,3 +29,7 @@ content-type: application/json
 }
 
 ###
+
+# 게시글 삭제
+
+DELETE http://localhost:3000/board/1
