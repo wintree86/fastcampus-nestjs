@@ -16,18 +16,16 @@ content-type: application/json
 {
     "name": "FastCampus",
     "contents": "contents 11",
-    "age": 12,
-    "gender": "male"
 }
 
 ###
 
 # 게시글 수정
-PUT http://localhost:3000/board/11
+PUT http://localhost:3000/board/1
 content-type: application/json
 
 {
-    "name": "FastCampus New"
+    "name": "FastCampus New world"
 }
 
 ###
