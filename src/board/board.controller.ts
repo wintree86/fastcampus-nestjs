@@ -17,6 +17,7 @@ export class BoardController {
     }
 
     @Get(':id')
+
     find(
         @Param('id', ParseIntPipe) id: number
     ) {

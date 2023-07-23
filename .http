@@ -33,3 +33,7 @@ content-type: application/json
 # 게시글 삭제
 
 DELETE http://localhost:3000/board/1
+
+
+###
+GET http://localhost:3000
