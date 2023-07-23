@@ -15,7 +15,7 @@ content-type: application/json
 
 {
     "name": "FastCampus",
-    "contents": "contents 11",
+    "contents": "contents 11"
 }
 
 ###
