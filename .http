@@ -15,17 +15,17 @@ content-type: application/json
 
 {
     "userId": 2,
-    "contents": "contents 11"
+    "contents": "contents 9"
 }
 
 ###
 
 # 게시글 수정
-PUT http://localhost:3000/board/1
+PUT http://localhost:3000/board/11
 content-type: application/json
 
 {
-    "name": "FastCampus New world"
+    "contents": "FastCampus New world"
 }
 
 ###
