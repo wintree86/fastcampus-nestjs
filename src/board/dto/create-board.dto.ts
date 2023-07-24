@@ -1,16 +1,15 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { IsNotEmpty, MaxLength, MinLength } from 'class-validator';
+import { IsNotEmpty, IsNumber } from 'class-validator';
 
 export class CreateBoardDto {
-  @MinLength(2)
-  @MaxLength(20)
+  @IsNumber()
   @IsNotEmpty()
   @ApiProperty({
-    description: '이름',
+    description: '작성자 아이디',
     required: true,
-    example: '홍길동',
+    example: '1',
   })
-  name: string;
+  userId: number;
 
   @IsNotEmpty()
   @ApiProperty({
