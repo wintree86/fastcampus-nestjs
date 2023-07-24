@@ -21,7 +21,7 @@ content-type: application/json
 ###
 
 # 게시글 수정
-PUT http://localhost:3000/board/11
+PUT http://localhost:3000/board/1
 content-type: application/json
 
 {
