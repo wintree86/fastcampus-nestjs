@@ -37,3 +37,10 @@ DELETE http://localhost:3000/board/1
 
 ###
 GET http://localhost:3000
+
+
+###
+
+# 유저 리스트 가져오기
+
+GET http://localhost:3000/user
