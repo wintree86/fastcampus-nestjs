@@ -1,5 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
+import { Board } from 'src/entity/board.entity';
 import { User } from 'src/entity/user.entity';
 import { Repository } from 'typeorm';
 
@@ -11,6 +12,15 @@ export class UserService {
   ) {}
 
   async getUser() {
-    return this.userRepository.find();
+    const qb = this.userRepository.createQueryBuilder();
+
+    qb.addSelect((subQuery) => {
+      return subQuery
+        .select('count(id)')
+        .from(Board, 'Board')
+        .where('Board.userId = User.id');
+    }, 'User_boardCount');
+
+    return qb.getMany();
   }
 }
