@@ -12,10 +12,10 @@ GET http://localhost:3000/board/16
 # 게시글 생성
 POST http://localhost:3000/board
 content-type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJmYXN0Y2FtcHVzMjAyNCIsIm5hbWUiOiJmYXN0Y2FtcHVzbmFtZTIiLCJpYXQiOjE2OTA3MDczNjMsImV4cCI6MTY5MDcxMDk2M30.F0wRfPGNoYaqOm0IYNFSeHXY5gRRe4hMxQfaRDinuV0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJmYXN0Y2FtcHVzMjAyNCIsIm5hbWUiOiJmYXN0Y2FtcHVzbmFtZTIiLCJpYXQiOjE2OTA3Mjk2ODIsImV4cCI6MTY5MDczMzI4Mn0.zZ46zzi_UeOrYxPp6nCqi-7QyGBUsiOPqOzQSI3LuKk
 
 {
-    "contents": "new api"
+    "contents": "새로운 게시글"
 }
 
 ###
