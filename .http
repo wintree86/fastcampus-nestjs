@@ -44,3 +44,29 @@ GET http://localhost:3000
 # 유저 리스트 가져오기
 
 GET http://localhost:3000/user
+
+###
+
+# 유저 회원가입
+
+POST http://localhost:3000/user
+content-type: application/json
+
+{
+    "username": "fastcampus2024",
+    "name": "fastcampusname2",
+    "password": "fastcampuspassword"
+}
+
+###
+
+# 유저 로그인
+
+POST http://localhost:3000/user/login
+content-type: application/json
+
+{
+    "username": "fastcampus2024",
+    "password": "fastcampuspassword1"
+}
+
