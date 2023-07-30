@@ -67,6 +67,6 @@ content-type: application/json
 
 {
     "username": "fastcampus2024",
-    "password": "fastcampuspassword1"
+    "password": "fastcampuspassword"
 }
 

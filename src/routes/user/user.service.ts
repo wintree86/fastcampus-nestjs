@@ -6,6 +6,7 @@ import { Board } from 'src/entity/board.entity';
 import { User } from 'src/entity/user.entity';
 import { Repository } from 'typeorm';
 import { LoginUserDto } from './dto/login-user.dto';
+import * as jwt from 'jsonwebtoken';
 
 @Injectable()
 export class UserService {
@@ -39,8 +40,19 @@ export class UserService {
 
     if (!match)
       throw new HttpException('UNAUTHORIZED', HttpStatus.UNAUTHORIZED);
-    
-    return user;
+
+    const payload = {
+      username,
+      name: user.name,
+    };
+
+    const accessToken = jwt.sign(payload, 'secret_key', {
+      expiresIn: '1h'
+    });
+
+    return {
+      accessToken,
+    };
   }
 
   async getUser() {
