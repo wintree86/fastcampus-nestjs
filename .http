@@ -82,3 +82,9 @@ content-type: application/json
     "password": "fastcampuspassword"
 }
 
+###
+
+# 유저 ME
+GET http://localhost:3000/me
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImZhc3RjYW1wdXMyMDI0IiwibmFtZSI6ImZhc3RjYW1wdXNuYW1lMiIsImlhdCI6MTY5MDcwMzUxNywiZXhwIjoxNjkwNzA3MTE3fQ.756lZ9tHRzG_QjD_DIGeXDeIyOXg7oaDPR0ahC6hsvU
